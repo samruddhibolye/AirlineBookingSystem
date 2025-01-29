@@ -1,7 +1,5 @@
 package com.learn.AirlineBookingSystem.entities;
 
-
-
 import java.time.LocalDateTime;
 
 import org.hibernate.annotations.CreationTimestamp;
@@ -36,5 +34,8 @@ public class Booking {
 	
 	@ManyToOne
 	private User user;
+	
+	@ManyToOne()
+	private Ticket tickets;
 
 }
